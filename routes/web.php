@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,5 +33,19 @@ Route::get('/projects', function () {
         'title' => "Project"
     ]);
 });
+Route::get('/welcome', function () {
+    return view('welcome',[
+        'title' => "welcome"
+    ]);
+});
 Route::resource('posts',
 'App\Http\Controllers\PostController');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes([
+    'reset' => false,
+   ]);
+Auth::routes();
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

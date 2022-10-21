@@ -5,7 +5,7 @@
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>i just copy & paste this template <a href="github.com/Siv3rn">Sivern/Anggito Wicaksono</a>.</strong> All rights deserved to 
+    <strong>i just copy & paste this template <a href=https://github.com/Siv3rn>Sivern/Anggito Wicaksono</a>.</strong> All rights deserved to 
     <a href="adminlte.io">AdminLTE</a>.
   </footer>
 </div>
