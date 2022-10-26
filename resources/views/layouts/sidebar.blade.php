@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/post" class="nav-link">
+            <a href="/posts" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Blog
