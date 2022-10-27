@@ -11,6 +11,7 @@ use Illuminate\Queue\SerializesModels;
 
 class SendMailJob implements ShouldQueue
 {
+    public $data;
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     /**
@@ -18,9 +19,10 @@ class SendMailJob implements ShouldQueue
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
+        $this->data = $data;
     }
 
     /**
@@ -31,5 +33,7 @@ class SendMailJob implements ShouldQueue
     public function handle()
     {
         //
+        $email = new SendEmail($this->data);
+ Mail::to($this->data['email'])->send($email);
     }
 }
