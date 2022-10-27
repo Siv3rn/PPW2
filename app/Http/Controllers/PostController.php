@@ -130,7 +130,7 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->delete();
 
-        return redirect('posts')-> with('success','data telah dihapusSS');
+        return redirect('posts')-> with('success','data telah dihapus');
     }
     public function __construct()
     {

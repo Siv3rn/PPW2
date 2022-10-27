@@ -39,7 +39,7 @@
             <a href="/education" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Education
+                Educations
               </p>
             </a>
           </li>
