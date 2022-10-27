@@ -14,8 +14,7 @@
 <form action="{{ route('posts.destroy',$posts->id) }}" method="POST">
 @method('DELETE')
 {{ csrf_field() }}
-<input type="hidden" name="id" value="{{
-$posts->id }}">
+<input type="hidden" name="id" value="{{$posts->id }}">
 
 <br><br>
 <button type="submit" class="btn btn-danger">Delete</button>
