@@ -1,4 +1,4 @@
-@include('layouts.main')
+@include('layouts.app')
 
 <div class="row  justify-content-center">
     <h3 class="text-center my-2"> Tutorial Queue Laravel</h3>
