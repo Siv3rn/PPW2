@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendEmail;
+use Illuminate\Support\Facades\Storage;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,15 +52,5 @@ Auth::routes();
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/send-email',function(){
-//     $data = [
-//     'name' => 'Nama Anda',
-//     'body' => 'Testing Kirim Email'
-//     ];
-   
-//     Mail::to('Anggito732@gmail.com')->send(new SendEmail($data));
-   
-//    });
-
 Route::get('/send-email', [App\Http\Controllers\SendEmailController::class, 'index'])->name('kirim-email');
 Route::post('/post-email', [App\Http\Controllers\SendEmailController::class, 'store'])->name('post-email');

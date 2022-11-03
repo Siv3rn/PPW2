@@ -23,6 +23,7 @@
                 <label for="name">Body Deskripsi</label>
                 <textarea name="body" id="" cols="30" rows="10">
                     
+                    
                 </textarea>
                 
             </div>
@@ -31,5 +32,5 @@
             </div>
         </form>
     </div>
-    
+     
 </div>
