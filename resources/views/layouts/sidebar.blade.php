@@ -59,6 +59,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="/send-email" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Send Email to Me
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
