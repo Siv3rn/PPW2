@@ -11,7 +11,7 @@
     </div>
     <div class="d-flex justify-content-center">
         
-        <img src="{{asset('storage/posts_image/'.$posts->picture)}}">
+        <img src="{{asset('storage/posts_image/'.$posts->picture)}}" class="rounded ">
     </div>
 </div>
 <a href="/posts" class="btn btn-primary">Back</a>
@@ -23,7 +23,7 @@
     <input type="hidden" name="id" value="{{$posts->id }}">
     
 <br><br>
-<button type="submit" class="btn btn-danger">Delete</button>
+<button type="submit" onclick="return confirm('delete Post')" class="btn btn-danger">Delete</button>
 </form>
 @endauth
 @endsection

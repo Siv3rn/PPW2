@@ -16,7 +16,7 @@
             <div class="form-group">
                 <label for="input-file">File Input</label>
                 <div class="input-group">
-                    <div class="custom-file">
+                    <div class="custom-file border border-secondary rounded">
 
                         <input type="file" class="custom-file-input" id="input-file" name="picture">
                         

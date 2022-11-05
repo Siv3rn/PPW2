@@ -1,7 +1,7 @@
 @include('layouts.app')
 
 <div class="row  justify-content-center">
-    <h3 class="text-center my-2"> Tutorial Queue Laravel</h3>
+    <h3 class="text-center my-2"> Send Mail to Me</h3>
     <div class="col-md-4 p-4">
         @if (session('status'))
             <div class="alert alert-primary" role="alert">

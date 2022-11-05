@@ -6,16 +6,19 @@
     {!! session('success')!!}
 </div>
 @endif
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1>Blog Post</h1>
-        @if(count($posts)>0)
-            @foreach ($posts as $post)
+<h1>Blog Post</h1>
+<div class="container">
+    @if(count($posts)>0)
+    @foreach ($posts as $post)
+    <div class="jumbotron jumbotron-fluid">
             <div class="well">
-                <h3><a href="/posts/{{$post -> id}} " > {{$post -> title}}</a></h3>
 
-                <small>tanggal:{{$post-> created_at}} </small>                
+                <h3 class=""><a href="/posts/{{$post -> id}} " > {{$post -> title}}</a></h3>
+                <img src="{{asset('storage/posts_image/'.$post->picture)}}" alt="" class="img-responsive img-fluid" style="height: 200px">
+                
             </div>
+            <small>tanggal:{{$post-> created_at}} </small>                
+        </div>
             @endforeach
             Halaman : {{ $posts->currentPage() }} <br />
             Jumlah Data : {{ $posts->total() }} <br />
@@ -30,7 +33,6 @@
         @endif
         </div>
         
-    </div>
 @auth
     <a href="{{route ('posts.create') }}" class="btn btn-primary"> Create   </a>
 @endauth

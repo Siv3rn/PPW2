@@ -148,10 +148,6 @@ class PostController extends Controller
         $posts -> description = $request->input('description');
         $posts  -> picture = $filenameSimpan;
         $posts -> save();
-        // Post::where('id', $request-> id)->update([
-        //     'title' => $request->title,
-        //     'description' => $request->description
-        // ]);
 
         return redirect('posts') -> with('success','data telah diperbarui');
 
