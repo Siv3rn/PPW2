@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+
 class GalleryController extends Controller
 {
     /**
@@ -11,6 +12,20 @@ class GalleryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    /**
+* @OA\Get(
+* path="/api/gallery",
+* tags={"galleries"},
+* summary="show images ",
+* description="Gallery to show image",
+* operationId="picture",
+
+* @OA\Response(
+* response="default",
+* description="successful operation"
+* )
+* )
+*/
     public function index()
     {
         //
