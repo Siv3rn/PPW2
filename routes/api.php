@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/greet',[App\Http\Controllers\GreetController::class,'greet'])-> name('greet');
-Route::get('/gallery', [App\Http\Controllers\GalleryController::class, 'index'])->name('galleries');
+Route::get('greet',[App\Http\Controllers\GreetController::class,'greet'])-> name('greet');
+Route::get('gallery', [App\Http\Controllers\GalleryController::class, 'index'])->name('galleries');
