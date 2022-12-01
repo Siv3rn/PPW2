@@ -58,10 +58,15 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
+        
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
     },
     "minimum-stability": "dev",
+    "post-install-cmd": [ "ln -sr storage/app/public public/storage" ],
+
+
     "prefer-stable": true
+    
 }
